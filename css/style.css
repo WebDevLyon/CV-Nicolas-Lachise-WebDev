@@ -1,0 +1,53 @@
+/*1.MISE EN PAGE GÉNÉRALE DESKTOP
+----------------------------------------------------*/
+
+/* Les fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Mise en page Flex et style des deux colonnes*/
+#container
+{
+	display:flex;
+}
+
+.left_part
+{
+	flex:1;
+	background-color: #FB8C00;
+}
+
+.right_part
+{
+	flex:2;
+	margin: 0 5rem 0 4rem;
+}
+
+/* Les titres */
+
+h3
+{
+	font-size: 23px;
+	text-transform: uppercase;
+}
+
+.aside_title
+{
+background-color: #424242;
+color: #FB8C00;
+height: 3rem;
+text-align: center;
+}
+
+hr
+{
+	border: none;
+	height: 2px;
+	background: #FB8C00;
+}
+
