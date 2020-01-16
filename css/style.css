@@ -11,7 +11,8 @@ body
 }
 
 /* Mise en page Flex et style des deux colonnes*/
-#container
+
+#container, body
 {
 	max-width: 1190px;
 }
@@ -25,35 +26,83 @@ header, .two_part
 {
 	flex:1;
 	background-color: #FB8C00;
+	position: relative;
 }
 
 .right_part, .header_right
 {
 	flex:2;
-	margin: 0 5rem 0 4rem;
+	padding-left: 7.2%;
+
 }
 
+/* Partie de gauche */
+
+img
+{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin:-15px 0 0 -15px;
+}
+
+.left_part
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.about_me
+{
+	flex-grow: 1;
+}
+/* Partie de droite*/
+.card_column
+{
+	display: flex;
+}
+
+.card_column_left
+{
+	flex:1;
+}
+
+.card_column_right
+{
+	flex:2;
+}
 /* Les titres */
+
+h1, h3, h4, h5
+{
+	text-transform: uppercase;
+}
+
+h1
+{
+	font-size: 43px;
+}
+
+.author_firstname
+{
+	color: #FB8C00;
+}
 
 h3
 {
 	font-size: 23px;
-	text-transform: uppercase;
 }
 
 .aside_title
 {
 	background-color: #424242;
 	color: #FB8C00;
-	height: 3rem;
 	text-align: center;
 }
 
-hr
+.right_part h3
 {
-	border: none;
-	height: 2px;
-	background: #FB8C00;
+	border-bottom: 2px solid #FB8C00;
 }
 
 /* Le contenu de gauche */
@@ -62,4 +111,8 @@ img
 {
 	width: 30px; /*réduction de l'image pour travailler sur le style sans déformer le reste, A REPRENDRE PAR LA SUITE*/
 }
+
+/* Le contenu de droite*/
+
+
 
