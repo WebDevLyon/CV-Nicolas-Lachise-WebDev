@@ -13,16 +13,21 @@ body
 /* Mise en page Flex et style des deux colonnes*/
 #container
 {
-	display:flex;
+	max-width: 1190px;
 }
 
-.left_part
+header, .two_part
+{
+	display: flex;
+}
+
+.left_part, .header_left
 {
 	flex:1;
 	background-color: #FB8C00;
 }
 
-.right_part
+.right_part, .header_right
 {
 	flex:2;
 	margin: 0 5rem 0 4rem;
@@ -38,10 +43,10 @@ h3
 
 .aside_title
 {
-background-color: #424242;
-color: #FB8C00;
-height: 3rem;
-text-align: center;
+	background-color: #424242;
+	color: #FB8C00;
+	height: 3rem;
+	text-align: center;
 }
 
 hr
@@ -49,5 +54,12 @@ hr
 	border: none;
 	height: 2px;
 	background: #FB8C00;
+}
+
+/* Le contenu de gauche */
+
+img
+{
+	width: 30px; /*réduction de l'image pour travailler sur le style sans déformer le reste, A REPRENDRE PAR LA SUITE*/
 }
 
