@@ -40,10 +40,11 @@ header, .two_part
 
 img
 {
+	width: 50%;
 	position: absolute;
 	top:50%;
 	left:50%;
-	margin:-15px 0 0 -15px;
+	margin: -92px 0 0 -92;
 }
 
 .left_part
@@ -103,13 +104,6 @@ h3
 .right_part h3
 {
 	border-bottom: 2px solid #FB8C00;
-}
-
-/* Le contenu de gauche */
-
-img
-{
-	width: 30px; /*réduction de l'image pour travailler sur le style sans déformer le reste, A REPRENDRE PAR LA SUITE*/
 }
 
 /* Le contenu de droite*/
