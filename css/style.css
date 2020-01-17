@@ -40,8 +40,17 @@ header, .two_part
 
 }
 
+aside
+{
+	padding: 2.5rem 0 2.5rem 0;
+}
+
 /* Partie de gauche */
 
+section
+{
+	padding-bottom: 4rem;
+}
 #photo_nicolas_lachise
 {
 	max-width:200px;
@@ -148,4 +157,17 @@ h6
 	display:flex;
 	flex-direction: column;
 	justify-content: space-around;
+}
+
+.flex
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: 2.5em;
+}
+
+i
+{
+	border: 1px black solid;
+	padding: 10px: 
 }
