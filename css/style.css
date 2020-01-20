@@ -2,9 +2,12 @@
 ----------------------------------------------------*/
 
 
-/* Les fonts */
+/**** a. Import des fonts 
+----------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/**** b. Dimensions et Flexbox
+----------------------------------------------------*/
 
 body
 {
@@ -15,7 +18,7 @@ body
 
 /* Mise en page Flex et style des deux colonnes*/
 
-#container, body
+body
 {
 	max-width: 1190px;
 }
@@ -53,13 +56,12 @@ section
 }
 #photo_nicolas_lachise
 {
-	max-width:200px;
+	max-width:60%;
+	height: auto;
 	border-radius: 180px 180px 180px 180px;
-	margin: auto;
-	display: flex;
-	box-shadow: 0px 0px 10px; 
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin: 2.5rem auto 2.5rem auto;
+	display: block;
+	box-shadow: 0px 0px 10px;
 }
 
 .left_part
@@ -105,7 +107,7 @@ h1, h3, h4
 
 h1
 {
-	font-size: 43px;
+	font-size: 2.7em;
 }
 
 h3
@@ -168,6 +170,16 @@ h6
 
 i
 {
-	border: 1px black solid;
 	padding: 10px: 
+}
+
+/* 2.MISE EN PAGE RESPONSIVE
+----------------------------------------------------*/
+
+@media all and (max-width: 768px)
+{
+	.two_part
+	{
+		display:block;
+	}
 }
