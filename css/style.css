@@ -39,8 +39,12 @@ header, .two_part
 .right_part, .header_right
 {
 	flex:2;
-	padding-left: 7.2%;
 
+}
+
+.header_right--padding, section
+{
+	padding-left: 7.2rem;
 }
 
 aside
