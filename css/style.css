@@ -1,38 +1,38 @@
-/* 1.RESET NAVIGATEUR
+/* IMPORT DES FONTS 
+----------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* STYLE DES COMPOSANTS
 ----------------------------------------------------*/
 
 a 
 {
-  text-decoration: none; 
+	text-decoration: none; 
 }
 
-li {
-  list-style: none; 
+li 
+{
+	list-style: none; 
+}
+
+#photo-dev
+{
+	max-width:65%;
+	height: auto;
+	border-radius: 180px 180px 180px 180px;
+	margin: 2.5rem auto 2.5rem auto;
+	display: block;
+	box-shadow: 0px 0px 10px;
 }
 
 /* 2.MISE EN PAGE GÉNÉRALE DESKTOP
 ----------------------------------------------------*/
-
-
-/**** a. Import des fonts 
-----------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-/**** b. Dimensions et Flexbox
-----------------------------------------------------*/
-
 body
 {
 	font-family: 'Roboto', sans-serif;
 	color:#424242;
-	margin: auto;
-}
-
-/* Mise en page Flex et style des deux colonnes*/
-
-body
-{
 	max-width: 1190px;
+	margin: auto;
 }
 
 header, .two_part
@@ -51,33 +51,21 @@ header, .two_part
 .right_part, .header_right
 {
 	flex:2;
-
 }
 
-.header_right--padding, section
+.left--padding, section
 {
 	padding: 0 4rem 0 5.3rem;
 }
-
-aside
-{
-	padding: 0rem 0 2.5rem 0;
-}
-
-/* Partie de gauche */
 
 section
 {
 	padding-bottom: 4rem;
 }
-#photo_nicolas_lachise
+
+aside
 {
-	max-width:65%;
-	height: auto;
-	border-radius: 180px 180px 180px 180px;
-	margin: 2.5rem auto 2.5rem auto;
-	display: block;
-	box-shadow: 0px 0px 10px;
+	padding: 0rem 0 2.5rem 0;
 }
 
 .left_part
@@ -98,6 +86,7 @@ h6, .left_part p
 	flex-grow: 1;
 
 }
+
 /* Partie de droite*/
 .card_column
 {
@@ -113,17 +102,17 @@ h6, .left_part p
 {
 	flex:2;
 }
+
+.header_right
+{
+	margin: auto;
+}
 /* Les titres */
 
 h1, h3, h4
 {
 	text-transform: uppercase;
 	color: #212121;
-}
-
-.header_right
-{
-margin: auto;
 }
 
 h3
@@ -143,13 +132,14 @@ h6
 	margin: 0.4em 0 -0.8em 0;
 	font-weight: 300;
 }
-
+.right_part h3
+{
+	border-bottom: 2px solid #FB8C00;
+}
 .author_firstname
 {
 	color: #FB8C00;
 }
-
-
 
 .aside_title
 {
@@ -158,10 +148,7 @@ h6
 	text-align: center;
 }
 
-.right_part h3
-{
-	border-bottom: 2px solid #FB8C00;
-}
+
 
 .reference_name
 {
@@ -191,6 +178,15 @@ h6
 	border-radius: 100%;
 }
 
+i
+{
+	padding-right: 1rem;
+}
+
+ul
+{
+	padding: 0;
+}
 /* 2.MISE EN PAGE RESPONSIVE
 ----------------------------------------------------*/
 
@@ -199,5 +195,25 @@ h6
 	.two_part
 	{
 		display:block;
+	}
+}
+
+@media all and (max-width: 425px)
+{
+	.header_right--padding, section 
+	{
+		padding: 0 1.0rem 0 1.0rem;
+	}
+	h3 
+	{
+		font-size: 1.5em;
+	}
+	.card_column 
+	{
+		display: block;
+	}
+	.left--padding, section 
+	{
+		padding: 0 0.2rem 0 0.2rem;
 	}
 }
