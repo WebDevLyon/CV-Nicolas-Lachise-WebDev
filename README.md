@@ -15,6 +15,6 @@ The page must be responsive. No model has been given for this version of the web
 
 I just use HTML5 and CSS3.
 
-I used the flexboxes for the responsive design
+I used the flexbox for the responsive design
 
 For icons, I use the library [Fontawesone](https://fontawesome.com/)
