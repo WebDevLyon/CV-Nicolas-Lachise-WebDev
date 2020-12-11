@@ -13,9 +13,7 @@ The page must be responsive. No model has been given for this version of the web
 
 ## Accomplishment 
 
-I just use HTML5 and Sass. Don't forget to compile the scss with the command.
-
->npm run sass
+I just use HTML5 and CSS3.
 
 I used the flexboxes for the responsive design
 
